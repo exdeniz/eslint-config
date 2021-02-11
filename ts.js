@@ -96,6 +96,20 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-redeclare': 'off',
         'dot-notation': 'off'
+      },
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        'import/resolver': {
+          typescript: {},
+        },
+        "import/extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
       }
     },
     {
